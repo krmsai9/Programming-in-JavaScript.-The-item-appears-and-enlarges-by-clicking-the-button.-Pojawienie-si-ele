@@ -6,7 +6,6 @@ let good = true;
 
 const changeLi = function () {
 
-    size++;
 
     li.forEach(element => {
 
@@ -14,7 +13,7 @@ const changeLi = function () {
             li.forEach(disp => {
 
                 disp.style.display = "block";
-
+                disp.style.fontSize = size;
             });
 
             good = !good;
@@ -24,6 +23,7 @@ const changeLi = function () {
         }
     });
 
+    size++;
 
 }
 
