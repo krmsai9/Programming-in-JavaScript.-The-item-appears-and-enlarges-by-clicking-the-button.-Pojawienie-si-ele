@@ -8,22 +8,21 @@ const changeLi = function () {
 
     size++;
 
-    for (let i = 0; i < li.length; i++) {
+    li.forEach(element => {
 
         if (good) {
-            for (let i = 0; i < li.length; i++) {
+            li.forEach(disp => {
 
-                li[i].style.display = "block";
-            }
+                disp.style.display = "block";
+
+            });
+
             good = !good;
         }
         else {
-            li[i].style.fontSize = size + "px";
+            element.style.fontSize = size + "px";
         }
-
-
-
-    }
+    });
 
 
 }
